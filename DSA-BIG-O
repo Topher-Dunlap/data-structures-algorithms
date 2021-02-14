@@ -1,0 +1,58 @@
+1. What is the Big O for this?
+    1.Constant time O(1)
+    2. Linear time O(n)
+2. Even or odd
+    1. Constant time O(1)
+    2. No matter the size of your input, the algorithm will take the same amount of time to complete. This function performs a basic arithmetic operation.
+3. Are you here?
+    1. Polynomial time O(n^k)
+    2. There is a nested For loop, a running time that would be some input size n raised to some constant power 2
+4. Doubler
+    1. Linear time O(n), the time increases at a consistent rate depending on the input
+5. Naive search
+    1. Linear time O(n)
+    2. Must possibly go through entire array to find match
+6.  Creating pairs:
+    1. Polynomial time O(n^k)
+    2. There is a nested For loop, a running time that would be some input size n raised to some constant power 2
+7.  Compute the sequence
+    1. Linear time O(n)
+    2. Must possibly go through entire array to find match
+8.  An efficient search
+    1. Logarithmic time O(log(n)):
+9.  Random element
+    1. Constant time O(1):
+10.  What Am I?
+    1. Linear
+11. Tower of Hanoi:
+    function TowerofHanoi(disks) {
+      let rodA = disks;
+      let rodB = [];
+      let rodC = [];
+      ticks=1
+
+        for(let i = 0; i < rodA.length; i++){
+          rodB.unshift(rodA[i]);
+          ticks++;
+        }
+        for(let i = 0; i < rodB.length; i++){
+          rodC.unshift(rodB[i]);
+          ticks++;
+        }
+
+      return console.log("rodC: ", rodC, ticks)
+    }
+
+    TowerofHanoi([1,2,3,4,5])
+
+12.
+    1.function findDog(num, numList) {
+          //Base case
+          if (numList[0] = num){
+            return ("match found!")
+          }
+
+        return findDog(num, numList.slice(1))
+      }
+
+      findDog(4, [1,5,7,3,2,6,4,7,8])
