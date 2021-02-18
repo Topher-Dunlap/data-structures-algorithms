@@ -160,7 +160,7 @@ class LinkedList {
 function main() {
     const SLL = new LinkedList;
     const nameArray = ["Apollo", "Boomer", "Helo", "Husker", "Starbuck"];
-    nameArray.map( name => SLL.insertLast(name));
+    nameArray.map( name => SLL.insertLast(name) );
     SLL.remove("Husker");
     SLL.insertLast("Tauhida");
     SLL.insertBefore("Athena", "Helo");
